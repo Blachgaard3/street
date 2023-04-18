@@ -1,0 +1,704 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Niclas */
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+html
+
+body {
+  /* background-image: url(/img/baggrund2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat; */
+
+  height: 1080px;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  overflow-x: hidden;
+
+
+}
+.forsidebox{
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  width: 35%;
+  height: 30%;
+
+}
+
+
+.bund {
+width: 100%;
+object-fit: cover;
+top: 0;
+z-index: 1000;
+min-width: 1920px;
+}
+
+
+.progressBar {
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 0;
+  background: linear-gradient(to right, #ff7f11, #da9e44);
+  width: 1%;
+  z-index: 1000000000000;
+  transition: height 0.3s ease-out;
+}
+
+.progresscontainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  height: 100%;
+  width: 1%;
+  background: #ccc;
+}
+
+.startknap {
+  position: absolute;
+  top: 65%;
+  left: 67%;
+  display: flex;
+  width: 30%;
+  height: 7rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  background: rgba(255, 250, 240, 0.318);
+  border-radius: 10%;
+  box-shadow: 0px 5px 5px 0px;
+  color: #fd0d00;
+  
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+.startknap:hover {
+  color: #f01111;
+}
+
+.knapteskt {
+  opacity: 100%;
+}
+
+
+.forsidetitel {
+
+  font-size: 3.8rem;
+  color: #fefefe;
+}
+
+.forsideimg {
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  min-width: 1920px;
+  object-fit: cover;
+}
+
+.logo {
+position: absolute;
+top:5%;
+left:5%;
+z-index: 5;
+width: 10%;
+
+}
+
+.forside {
+  display: block;
+  height: 100vh;
+}
+
+.content {
+  display:none;
+}
+
+h4 {
+
+  font-size: 3rem;
+  color: #ccc;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height :400px;
+  background-color: #333333;
+  box-shadow: 4px 0px 0px 0px black;
+  font-size: 3rem;
+  justify-content: start;
+  
+}
+
+.footersec {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column  ;
+  justify-content: space-around;
+  color: #fefefe;
+  width: 620px;
+}
+
+/* Esben */
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  color: white;
+  border: 0px solid;
+  width: 70rem;
+  height: 43rem;
+/*width: 50%;*/
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+ /* -webkit-animation-name:animatetop;
+  -webkit-animation-duration: 0.5s;*/
+  animation-name: animatetop;
+  animation-duration: 0.5s;    
+  background-image: url(img/wood.png); 
+  font-size: 2rem;
+  
+}
+
+/* Add Animation */
+/*@-webkit-keyframes animatetop {
+  from {top: -300px; opacity:0}
+  to {top: 0px; opacity:1}
+}
+*/
+@keyframes animatetop {
+  from {top:-500px; opacity:-0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  right:1%;
+  color: white;
+  float: right;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color:red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.modal-body {
+padding: 4rem 1rem 1rem 1rem;
+text-align: center;
+height: 15rem;
+
+
+
+} 
+
+.modal-button{
+  width: 9.375rem;
+  height: 9.375rem;
+  min-width: 9.375rem;
+  border-radius: 50%;
+  font-size: 1.9rem;
+  border:0px solid;
+ color: #00000000;
+  margin: 4rem 5rem 5.5rem 5rem;
+ /* muligt skygge på tekst text-shadow:
+     3px 3px 0 #000,
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;*/
+  box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.781) ;
+  cursor: pointer;
+  transition: 1s;
+     
+}
+.modal-button:hover{
+  transform: scale(1.5, 1.5);
+  box-shadow: 0px 0px 10px 6px #333333;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: white;
+}
+
+.flexbox-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100%;
+
+}
+.udforsk-h1{
+  font-size: 5rem;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #f99b03;
+}
+.modal-buble-container{
+display: flex;
+justify-content: space-evenly;
+width: 50%;
+flex-wrap: wrap;
+margin-top: 3rem;
+margin-left: 25%;
+}
+
+/* her vises boblerne med et det oprindelige logo, og nedenunder kommer bliver der tillagt en hover class,
+til hvert billede for at baggrund billedet fra et logo til et billede af boden*/
+.modal-button-1{
+  background-image: url(img/duckit.webp);
+}
+.modal-button-2{
+background-image: url(img/gn.png);
+}
+.modal-button-3{
+  background-image: url(img/bap.png);
+}
+.modal-button-4{
+  background-image: url(img/kaffe.png);
+}
+.modal-button-5{
+  background-image: url(img/madmex.png);
+}
+.modal-button-1:hover{
+  background-image: url(img/bod1.png);
+}
+.modal-button-2:hover{
+background-image: url(img/bod2.png);
+}
+.modal-button-3:hover{
+  background-image: url(img/bod3.png);
+}
+.modal-button-4:hover{
+  background-image: url(img/bod4.png);
+}
+.modal-button-5:hover{
+  background-image: url(img/bod6.png); 
+}
+.bod-img-container{
+  width: 100%; 
+  display: flex;
+  justify-content: space-evenly;
+  background-image: url(img/wood.png); 
+}
+.food-img{
+  width: 250px;
+  height: 250px;
+  transition: 1s;
+  cursor: pointer;
+  border: 2px solid #333333;
+  border-radius: 50%;
+}
+.food-img:hover{
+  transform: scale(1.1,1.1);
+  
+}
+
+.foodpic {
+  width: 250px;
+}
+.img-p-text{
+  position:relative;
+  text-align: center;
+  font-size: 2rem;
+ color: white;
+}
+/* Marcus */
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+
+
+.imgpara {
+  
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 70%;
+  transition: opacity 1s;
+}
+
+.imgpara.fade-in {
+  opacity: 1.5;
+}
+
+.intermission {
+  background-image: url(img/concrete.png);
+height: 576px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 1920px;
+  z-index: 11;
+  object-fit: cover;
+
+}
+
+
+
+.intermission2 {
+  background-image: url(img/concrete2.png);
+height: 576px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 1920px;
+  z-index: 11;
+  object-fit: cover;
+
+}
+.intermission3 {
+  background-image: url(img/concrete3.png);
+height: 576px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 1920px;
+  z-index: 11;
+  object-fit: cover;
+
+}
+.intermission4 {
+  background-image: url(img/concrete4.png);
+height: 576px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 1920px;
+  z-index: 11;
+  object-fit: cover;
+
+}
+.intermission5 {
+  background-image: url(img/concrete5.png);
+height: 576px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 1920px;
+  z-index: 11;
+  object-fit: cover;
+
+}
+#section1 {
+  background-image: url(img/brittv.png);
+  height: 1800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 10;
+  object-fit: cover;
+  min-width: 1920px;
+}
+
+#section2 {
+  background-image: url(img/skolee.jpg);
+  height: 1800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 10;
+
+}
+#section3 {
+  background-image: url(img/fly.jpg);
+  height: 1800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 10;
+
+}
+#section4 {
+  background-image: url(img/borough2.jpg);
+  height: 1800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 10;
+
+}
+#section5 {
+  background-image: url(img/ide.jpg);
+  height: 1800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 10;
+
+}
+#section6 {
+  background-image: url(img/møde.jpg);
+  height: 1800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 10;
+
+}
+#section7 {
+  background-image: url(img/poker.jpg);
+  height: 1800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 10;
+
+}
+
+#section8 {
+  background-image: url(img/fly.jpg);
+  height: 1800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 10;
+
+}
+
+#section9 {
+  background-image: url(img/fly.jpg);
+  height: 1800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 10;
+
+}
+
+#section10 {
+  background-image: url(img/fly.jpg);
+  height: 1800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 10;
+
+}
+#section11 {
+  background-image: url(img/fly.jpg);
+  height: 1800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 10;
+
+}
+#section12 {
+  background-image: url(img/streetfood.png);
+  height: 1480px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 10;
+  
+}
+#section13 {
+  background-image: url(img/streetfood.png);
+  height: 2080px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 10;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.parallax-text {
+  position: absolute;
+left: 30%;
+z-index: 1;
+width: 40%;
+height: 20%;
+padding: 2rem;
+text-align: baseline;
+color: rgb(255, 255, 255);
+background-color: #383a42;
+border-radius: 20px;
+box-shadow: 3px 3px 3px 3px rgb(13, 12, 12);
+
+
+}
+
+
+.parallax-text h2 {
+  font-size: 40px;
+  margin: 0 0 20px;
+
+}
+
+.parallax-text p {
+  font-size: 24px;
+  margin: 0;
+}
+
+.parallax-text {
+  position: relative;
+  margin-top:40px;
+z-index: 1;
+width: 40%;
+height: 20%;
+padding: 2rem;
+text-align: baseline;
+color: rgb(255, 255, 255);
+background-color: #383a42;
+border-radius: 20px;
+box-shadow: 3px 3px 3px 3px rgb(13, 12, 12);
+  background:grey;
+  -webkit-transform: translateY(50px) rotate(-5deg) translateZ(0);
+  transform: translateY(50px) rotate(-5deg) translateZ(0);
+  -webkit-transition-delay: .3s;
+  -o-transition-delay: .3s;
+  transition-delay: .3s;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+  opacity: 0;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+.bottom-right.inView {
+  opacity: 1;
+  -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+  transform: translateY(0px) rotate(0deg) translateZ(0);
+}
+.inView {
+  opacity: 1;
+  -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+  transform: translateY(0px) rotate(0deg) translateZ(0);
+}
+/* Thomas */
